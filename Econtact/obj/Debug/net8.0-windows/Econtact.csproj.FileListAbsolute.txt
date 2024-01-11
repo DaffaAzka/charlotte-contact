@@ -1,0 +1,17 @@
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.exe
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.deps.json
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.runtimeconfig.json
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.pdb
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.Econtact.resources
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.Properties.Resources.resources
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.csproj.GenerateResource.cache
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.AssemblyInfoInputs.cache
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.AssemblyInfo.cs
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.csproj.CoreCompileInputs.cache
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\refint\Econtact.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.pdb
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.genruntimeconfig.cache
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\ref\Econtact.dll
