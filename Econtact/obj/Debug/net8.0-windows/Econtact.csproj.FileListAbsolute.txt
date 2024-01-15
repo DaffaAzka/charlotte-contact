@@ -15,3 +15,4 @@ E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\ref
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.pdb
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.genruntimeconfig.cache
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\ref\Econtact.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.sourcelink.json
