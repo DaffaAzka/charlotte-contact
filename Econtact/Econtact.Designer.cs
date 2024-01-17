@@ -45,7 +45,11 @@
             clearButton = new Button();
             idLabel = new Label();
             idBox = new TextBox();
+            databasesGridView = new DataGridView();
+            searchBox = new TextBox();
+            searchLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)myCharlotte).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)databasesGridView).BeginInit();
             SuspendLayout();
             // 
             // myCharlotte
@@ -202,11 +206,41 @@
             idBox.Size = new Size(94, 27);
             idBox.TabIndex = 14;
             // 
+            // databasesGridView
+            // 
+            databasesGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            databasesGridView.Location = new Point(926, 118);
+            databasesGridView.Name = "databasesGridView";
+            databasesGridView.RowHeadersWidth = 51;
+            databasesGridView.Size = new Size(395, 188);
+            databasesGridView.TabIndex = 16;
+            // 
+            // searchBox
+            // 
+            searchBox.CausesValidation = false;
+            searchBox.Location = new Point(985, 84);
+            searchBox.Name = "searchBox";
+            searchBox.Size = new Size(336, 27);
+            searchBox.TabIndex = 17;
+            // 
+            // searchLabel
+            // 
+            searchLabel.AutoSize = true;
+            searchLabel.Location = new Point(926, 88);
+            searchLabel.Name = "searchLabel";
+            searchLabel.Size = new Size(53, 20);
+            searchLabel.TabIndex = 18;
+            searchLabel.Text = "Search";
+            searchLabel.Click += label2_Click_2;
+            // 
             // Econtact
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1052, 450);
+            ClientSize = new Size(1350, 450);
+            Controls.Add(searchLabel);
+            Controls.Add(searchBox);
+            Controls.Add(databasesGridView);
             Controls.Add(idLabel);
             Controls.Add(idBox);
             Controls.Add(clearButton);
@@ -228,6 +262,7 @@
             Text = "Econtact";
             Load += Econtact_Load;
             ((System.ComponentModel.ISupportInitialize)myCharlotte).EndInit();
+            ((System.ComponentModel.ISupportInitialize)databasesGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -250,5 +285,8 @@
         private Button clearButton;
         private Label idLabel;
         private TextBox idBox;
+        private DataGridView databasesGridView;
+        private TextBox searchBox;
+        private Label searchLabel;
     }
 }
