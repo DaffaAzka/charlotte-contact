@@ -157,6 +157,7 @@
             submitButton.TabIndex = 10;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = false;
+            submitButton.Click += submitButton_Click;
             // 
             // updateButton
             // 
@@ -203,6 +204,7 @@
             idBox.CausesValidation = false;
             idBox.Location = new Point(492, 88);
             idBox.Name = "idBox";
+            idBox.ReadOnly = true;
             idBox.Size = new Size(94, 27);
             idBox.TabIndex = 14;
             // 
@@ -214,6 +216,7 @@
             databasesGridView.RowHeadersWidth = 51;
             databasesGridView.Size = new Size(395, 188);
             databasesGridView.TabIndex = 16;
+            databasesGridView.CellContentClick += databasesGridView_CellContentClick;
             // 
             // searchBox
             // 

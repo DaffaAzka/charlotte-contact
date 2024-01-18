@@ -16,3 +16,12 @@ E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Eco
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.genruntimeconfig.cache
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\ref\Econtact.dll
 E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.sourcelink.json
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.csproj.AssemblyReference.cache
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\Econtact.dll.config
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Programming\2024\CShap\Windows\Econtact\Econtact\obj\Debug\net8.0-windows\Econtact.csproj.CopyComplete

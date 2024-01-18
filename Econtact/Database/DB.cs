@@ -43,7 +43,7 @@ namespace Econtact.Database
             bool s = false;
             try
             {
-                string sql = "INSERT INTO Table_Contact (FullName, Contact, Email, Gender) VALUES (@FullName, @Contact, @Email, @Gender)";
+                string sql = "INSERT into Table_Contact (FullName, Contact, Email, Gender) VALUES (@FullName, @Contact, @Email, @Gender)";
                 SqlCommand command = new SqlCommand(sql, connection);
 
                 command.Parameters.AddWithValue("@FullName", data.FullName);
@@ -53,10 +53,12 @@ namespace Econtact.Database
 
                 connection.Open();
                 int rows = command.ExecuteNonQuery();
+                Console.WriteLine(rows);
                 s = (rows > 0);
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
+                MessageBox.Show("" + ex);
             } finally
             {
                 connection.Close();
@@ -120,5 +122,4 @@ namespace Econtact.Database
             return s;
         }
     }
-}
 }
