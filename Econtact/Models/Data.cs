@@ -8,8 +8,8 @@ namespace Econtact.Models
 {
     public class Data
     {
-        public int ContactId { get; set; }
-        public string Fullname { get; set; }
+        public int Id { get; set; }
+        public string FullName { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }

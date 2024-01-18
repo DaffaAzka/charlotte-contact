@@ -40,18 +40,58 @@ namespace Econtact.Database
         public bool Insert(Data data)
         {
             SqlConnection connection = new SqlConnection(myConnection);
+            bool s = false;
             try
             {
-                string sql = "INSERT INTO Table_Contact";
+                string sql = "INSERT INTO Table_Contact (FullName, Contact, Email, Gender) VALUES (@FullName, @Contact, @Email, @Gender)";
+                SqlCommand command = new SqlCommand(sql, connection);
 
+                command.Parameters.AddWithValue("@FullName", data.FullName);
+                command.Parameters.AddWithValue("@Contact", data.Contact);
+                command.Parameters.AddWithValue("@Email", data.Email);
+                command.Parameters.AddWithValue("@Gender", data.Gender);
+
+                connection.Open();
+                int rows = command.ExecuteNonQuery();
+                s = (rows > 0);
             }
             catch (Exception ex)
             {
-
             } finally
             {
-
+                connection.Close();
             }
+            return s;
+        }
+
+        // Insert data to DB
+        public bool Updaste(Data data)
+        {
+            SqlConnection connection = new SqlConnection(myConnection);
+            bool s = false;
+            try
+            {
+                string sql = "UPDATE Table_Contact SET FullName=@FullName, Contact=@Contact, Email=@Email, Gender=@Gender WHERE Id=@Id";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.AddWithValue("@FullName", data.FullName);
+                command.Parameters.AddWithValue("@Contact", data.Contact);
+                command.Parameters.AddWithValue("@Email", data.Email);
+                command.Parameters.AddWithValue("@Gender", data.Gender);
+                command.Parameters.AddWithValue("@Id", data.Id);
+
+                connection.Open();
+                int rows = command.ExecuteNonQuery();
+                s = (rows > 0);
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return s;
         }
     }
 }
