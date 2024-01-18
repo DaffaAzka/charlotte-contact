@@ -64,8 +64,8 @@ namespace Econtact.Database
             return s;
         }
 
-        // Insert data to DB
-        public bool Updaste(Data data)
+        // Update data to DB
+        public bool Update(Data data)
         {
             SqlConnection connection = new SqlConnection(myConnection);
             bool s = false;
@@ -93,5 +93,32 @@ namespace Econtact.Database
             }
             return s;
         }
+
+        // Update data to DB
+        public bool Delete(Data data)
+        {
+            SqlConnection connection = new SqlConnection(myConnection);
+            bool s = false;
+            try
+            {
+                string sql = "DELETE FROM Table_Contact WHERE Id=@Id";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.AddWithValue("@Id", data.Id);
+
+                connection.Open();
+                int rows = command.ExecuteNonQuery();
+                s = (rows > 0);
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return s;
+        }
     }
+}
 }
