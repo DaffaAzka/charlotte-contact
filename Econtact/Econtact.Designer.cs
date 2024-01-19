@@ -169,6 +169,7 @@
             updateButton.TabIndex = 11;
             updateButton.Text = "Update";
             updateButton.UseVisualStyleBackColor = false;
+            updateButton.Click += updateButton_Click;
             // 
             // deleteButton
             // 
@@ -180,6 +181,7 @@
             deleteButton.TabIndex = 12;
             deleteButton.Text = "Delete";
             deleteButton.UseVisualStyleBackColor = false;
+            deleteButton.Click += deleteButton_Click;
             // 
             // clearButton
             // 
@@ -189,6 +191,7 @@
             clearButton.TabIndex = 13;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // idLabel
             // 
@@ -217,6 +220,7 @@
             databasesGridView.Size = new Size(395, 188);
             databasesGridView.TabIndex = 16;
             databasesGridView.CellContentClick += databasesGridView_CellContentClick;
+            databasesGridView.RowHeaderMouseClick += databasesGridView_RowHeaderMouseClick;
             // 
             // searchBox
             // 
