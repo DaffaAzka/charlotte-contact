@@ -1,6 +1,8 @@
 using Econtact.Database;
 using Econtact.Models;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Econtact
 {
@@ -13,6 +15,7 @@ namespace Econtact
 
         Data data = new Data();
         DB databases = new DB();
+        public string myConnection = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
         private void Econtact_Load(object sender, EventArgs e)
         {
@@ -144,6 +147,16 @@ namespace Econtact
         private void clearButton_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = searchBox.Text;
+            SqlConnection connection = new SqlConnection(myConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Table_Contact WHERE FullName LIKE '%" + keyword +"' OR Contact LIKE '%" + keyword +"%' OR Email LIKE '%" + keyword +"%' OR Gender LIKE '%" + keyword +"%'", connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            databasesGridView.DataSource = dt;
         }
     }
 }

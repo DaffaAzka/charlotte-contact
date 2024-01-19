@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Econtact")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3c61adfd809a25d0a6419b9df7babb65d8770a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Econtact")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Econtact")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
